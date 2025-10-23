@@ -1,66 +1,66 @@
-# file: kho_kich_ban_tho_ho.py
+# file: kịch_bản/kho_kich_ban_tho_ho.py
 
 SCENARIOS_THO_HO = {
     "morning": [
-        "Sáng sớm sương còn chưa tan chú đã phải dậy đi làm rồi, tranh thủ vào chào anh em một câu lấy may.",
-        "Đêm qua chú đau lưng quá ngủ không ngon giấc, chỉ mong sáng nay vào nhóm có tin vui cho phấn chấn.",
-        "Làm được một tay đầu ngày là có thêm tiền ăn cái bánh mì với ly cà phê cho tỉnh táo rồi.",
-        "Công việc của chú làm ngoài trời nắng nôi vất vả nên có thêm đồng nào hay đồng đó các cháu ạ.",
-        "Chú chuẩn bị trèo lên giàn giáo, ở trên đó không dùng điện thoại được nên có gì tối chú xem lại sau.",
-        "Cả ngày người dính đầy xi măng, chỉ có lúc vào nhóm đọc tin nhắn của mọi người là chú thấy vui vẻ.",
-        "Mỗi sáng thức dậy chú đều nghĩ đến việc phải cố gắng hơn để vợ con ở quê đỡ khổ.",
-        "Hôm nay mà thắng được chút đỉnh thì chiều về chú sẽ mua thêm ít thịt cá để cải thiện bữa ăn.",
-        "Chú vừa ăn vội gói xôi, chuẩn bị đi làm. Chúc cả nhà mình ở lại may mắn nhé.",
-        "Tay chân chú lấm lem quen rồi, chỉ mong sao kiếm được đồng tiền sạch sẽ gửi về cho gia đình.",
-        "Ở công trình ồn ào lắm, tiếng máy trộn bê tông át cả tiếng nói, nên chú chỉ xem chữ thôi.",
-        "Chú tin tưởng các cháu có học thức, có sự tính toán, chắc chắn sẽ tốt hơn chú tự mày mò.",
-        "Hôm qua đi làm về mệt quá chú ngủ quên mất, sáng nay vào thấy nhóm thắng lớn mà tiếc hùi hụi.",
-        "Lại một ngày mới phải bán sức lao động, chỉ mong có ngày được về quê làm công việc nhẹ nhàng hơn.",
-        "Thắng được một tay, coi như có tiền mua cho thằng cu ở nhà hộp sữa tốt hơn rồi.",
-        "Chú đi làm đây, có kèo nào chắc ăn các cháu nhớ hú một tiếng nhé.",
-        "Đôi bàn tay này của chú chai sạn hết cả rồi, chỉ mong đời con mình không vất vả như mình.",
-        "Chú già rồi, không nhanh nhạy được như các cháu, nên cứ từ từ mà đi thôi.",
-        "Mở mắt ra là thấy có tiền, cái cảm giác này nó vui khó tả lắm.",
-        "Hy vọng hôm nay công việc suôn sẻ, nhóm mình cũng suôn sẻ luôn."
+        "Chào buổi sáng cả nhà. Chú dậy đi làm từ sớm, tranh thủ vào chào hỏi anh em một câu lấy may mắn.",
+        "Đêm qua chú đau lưng khó ngủ quá, chỉ mong sáng nay vào nhóm có tin vui cho phấn chấn tinh thần.",
+        "Làm được một tay đầu ngày là có thêm tiền ăn sáng, uống ly cà phê cho tỉnh táo rồi. Cả nhà mình sao rồi?",
+        "Công việc của chú nắng nôi vất vả, có thêm đồng nào hay đồng đó các cháu ạ. Nay có gì khả quan không?",
+        "Chú chuẩn bị trèo lên giàn giáo đây, trên đó không dùng điện thoại được. Có gì tối chú xem lại, nhờ các cháu cập nhật nhé.",
+        "Cả ngày người dính đầy xi măng, chỉ có lúc vào đọc tin nhắn của mọi người là chú thấy vui.",
+        "Mỗi sáng thức dậy chú đều nghĩ phải cố gắng hơn để vợ con ở quê đỡ khổ. Anh em mình cùng cố gắng nhé.",
+        "Nay mà thắng được một ít là chiều về chú mua thêm ít thịt cải thiện bữa ăn. Hi vọng nay may mắn.",
+        "Chú vừa ăn vội gói xôi, chuẩn bị đi làm. Chúc cả nhà mình ở lại gặp nhiều may mắn nhé.",
+        "Tay chân chú lấm lem quen rồi, chỉ mong kiếm được đồng tiền sạch sẽ gửi về cho gia đình thôi.",
+        "Ở công trình ồn ào lắm, tiếng máy móc át cả tiếng người, nên chú chỉ vào đọc chữ thôi, các cháu thông cảm.",
+        "Chú tin tưởng các cháu có học thức, tính toán giỏi, chắc chắn sẽ tốt hơn chú tự mày mò.",
+        "Hôm qua đi làm về mệt quá chú ngủ quên mất. Sáng nay vào thấy nhóm thắng lớn mà tiếc hùi hụi.",
+        "Lại một ngày mới đi bán sức lao động, chỉ mong có ngày được về quê làm công việc nhẹ nhàng hơn.",
+        "Thắng được một tay, coi như có tiền mua cho thằng cu ở nhà hộp sữa tốt hơn rồi. Mừng quá.",
+        "Chú đi làm đây, có kèo nào chắc ăn các cháu nhớ hú một tiếng nhé. Cảm ơn các cháu nhiều.",
+        "Đôi bàn tay này của chú chai sạn hết rồi, chỉ mong đời con mình không vất vả như mình.",
+        "Chú già rồi, không nhanh nhạy được như các cháu, nên có gì các cháu chỉ bảo thêm nhé.",
+        "Mở mắt ra là thấy tiền về, cái cảm giác này nó vui khó tả lắm. Chúc mừng cả nhà.",
+        "Hy vọng hôm nay công việc của chú và của cả nhóm mình đều suôn sẻ."
     ],
     "noon": [
-        "Nghỉ trưa rồi, trời nắng gắt quá nên chú phải tìm vội một bóng râm ngồi tạm ăn hộp cơm.",
-        "Vừa ăn xong hộp cơm bụi mà húp được một tay, tự nhiên thấy cơm ngon hơn hẳn.",
+        "Nghỉ trưa rồi cả nhà ơi. Trời nắng gắt quá, chú tìm bóng cây ngồi ăn tạm hộp cơm.",
+        "Vừa ăn xong hộp cơm bụi mà thấy nhóm báo thắng, tự nhiên thấy cơm ngon hơn hẳn. Cảm ơn các cháu.",
         "Thắng được một chút thôi mà quý lắm, nó bằng cả buổi chiều chú phơi nắng ngoài công trình rồi.",
-        "Mồ hôi chảy ròng ròng ướt cả áo, may mà có tin vui từ nhóm làm chú thấy mát lòng mát dạ.",
-        "Mấy anh em cùng làm cứ hỏi sao chú hay ngồi cười một mình, tại niềm vui này khó mà giải thích được.",
-        "Chú xin phép chợp mắt một lát lấy sức, chiều còn phải trộn cả xe hồ nữa.",
+        "Mồ hôi chảy ướt cả áo, may mà có tin vui từ nhóm làm chú thấy mát lòng mát dạ.",
+        "Mấy anh em cùng làm cứ hỏi sao chú hay ngồi cười một mình, tại niềm vui này khó giải thích cho họ hiểu được.",
+        "Chú xin phép chợp mắt một lát lấy sức, chiều còn phải trộn cả xe hồ nữa. Có gì báo chú nhé.",
         "Cảm ơn các cháu đã chỉ dẫn, chứ thân già như chú đâu biết gì về mấy cái này.",
-        "Ăn vội vàng rồi lại phải ra làm ngay, hẹn gặp lại cả nhà mình vào lúc chiều tối nhé.",
-        "Bữa cơm đạm bạc mà có thêm niềm vui từ nhóm thì không còn gì bằng.",
-        "Chú đang ngồi dưới gốc cây, vừa phe phẩy cái nón vừa xem điện thoại.",
-        "Tiền này chú sẽ để dành, cuối tháng gửi về cho vợ đóng tiền điện nước.",
+        "Ăn vội vàng rồi lại phải ra làm ngay, hẹn gặp lại cả nhà mình vào buổi tối nhé.",
+        "Bữa cơm đạm bạc mà có thêm niềm vui từ nhóm thì không còn gì bằng. Chúc mọi người ăn trưa ngon miệng.",
+        "Chú đang ngồi dưới gốc cây, phe phẩy cái nón vừa xem điện thoại đây. Tình hình sao rồi cả nhà?",
+        "Tiền này chú sẽ để dành, cuối tháng gửi về cho vợ đóng tiền học cho con.",
         "Ở đây ai cũng tốt bụng, không chê chú già cả, chậm chạp. Chú biết ơn lắm.",
-        "Thắng được một tay, có tiền mua chai nước ngọt uống cho lại sức rồi.",
-        "Chú chỉ mong ngày nào cũng được đều đặn như này, không cần nhiều, chỉ cần an toàn.",
+        "Lại thắng rồi! Có tiền mua chai nước ngọt uống cho lại sức rồi. Cảm ơn nhóm mình.",
+        "Chú chỉ mong ngày nào cũng đều đặn như này thôi, không cần nhiều, chỉ cần an toàn.",
         "Nhìn các cháu trò chuyện rôm rả, chú cũng thấy mình như trẻ lại vài tuổi.",
         "Ăn xong rồi, chú phải phụ anh em một tay. Hẹn gặp lại cả nhà.",
-        "Cái cảm giác sung sướng khi thắng nó giúp chú quên hết mệt mỏi.",
-        "Chú sẽ không bao giờ quên sự giúp đỡ của mọi người đâu.",
+        "Cái cảm giác sung sướng khi thắng nó giúp chú quên hết mệt mỏi luôn.",
+        "Chú sẽ không bao giờ quên sự giúp đỡ của mọi người đâu. Thật tâm đấy.",
         "Số tiền này tuy nhỏ nhưng nó giúp chú trang trải được nhiều thứ lắm.",
-        "Lại có sức để chiến đấu với công việc buổi chiều rồi, cảm ơn nhóm mình."
+        "Lại có sức để chiến đấu với công việc buổi chiều rồi. Cảm ơn cả nhà."
     ],
     "evening": [
-        "Chú vừa về đến phòng trọ, mệt rã rời nhưng việc đầu tiên vẫn là mở nhóm lên xem tình hình.",
-        "Tắm rửa xong xuôi ngồi ăn cơm một mình, có nhóm trò chuyện chú cũng đỡ cảm thấy cô đơn.",
-        "Cả ngày làm việc đã mệt, chú chỉ mong tối đến có thể kiếm thêm chút đỉnh để bù lại công sức.",
+        "Chú vừa về đến phòng trọ, mệt rã rời nhưng việc đầu tiên vẫn là mở nhóm lên xem tình hình. Cả nhà ăn tối chưa?",
+        "Tắm rửa xong xuôi ngồi ăn cơm một mình, có nhóm trò chuyện chú cũng đỡ cô đơn.",
+        "Cả ngày làm việc đã mệt, tối đến chỉ mong kiếm thêm chút đỉnh bù lại công sức.",
         "Hôm nay trên công trình có người bị tai nạn, nghĩ phận mình cũng mong manh nên phải cố gắng hơn.",
-        "Số tiền lời hôm nay đủ để chú gửi về cho con bé nhà chú đóng tiền học thêm rồi, mừng rơi nước mắt.",
-        "Chú không dám chơi lớn, cứ theo anh em một cách an toàn để tích tiểu thành đại thôi.",
-        "Thôi chắc chú đi ngủ sớm để mai còn có sức đi làm, chúc các cháu ở lại gặp nhiều may mắn.",
+        "Số tiền lời hôm nay đủ để chú gửi về cho con bé nhà chú đóng tiền học thêm rồi. Mừng rơi nước mắt các cháu ạ.",
+        "Chú không dám chơi lớn, cứ theo anh em một cách an toàn để tích tiểu thành đại thôi. Chậm mà chắc.",
+        "Thôi chắc chú đi ngủ sớm để mai còn có sức đi làm. Chúc các cháu ở lại gặp nhiều may mắn nhé.",
         "Kết thúc một ngày vất vả mà có thêm thu nhập, bao nhiêu mệt nhọc của chú đều tan biến hết.",
-        "Về tới phòng là chú phải xoa dầu vào mấy chỗ đau nhức, tuổi già không tha một ai.",
+        "Về tới phòng là chú phải xoa dầu vào mấy chỗ đau nhức. Tuổi già không tha một ai.",
         "Chú vừa gọi điện về nhà, nghe giọng vợ con là lại có thêm động lực để cố gắng.",
         "Đêm đến nằm nghĩ lại thấy mình may mắn thật, gặp được đúng nơi để tin tưởng.",
         "Chú đang ngồi xem lại mấy cái phân tích của admin để học hỏi thêm, tuy chậm nhưng chú sẽ cố.",
-        "Hôm nay chủ thầu trả lương, chú sẽ trích một phần để nạp thêm vốn, phải có đầu tư mới có thu hoạch.",
+        "Hôm nay chủ thầu trả lương, chú sẽ trích một phần để nạp thêm vốn. Phải có đầu tư mới có thu hoạch.",
         "Ánh đèn phòng trọ hiu hắt, chỉ có ánh sáng từ điện thoại và sự sôi động của nhóm là làm chú vui.",
-        "Chú chốt sổ ngày hôm nay, lãi được một khoản bằng mấy ngày công của chú rồi, không còn gì để chê.",
+        "Chú chốt sổ ngày hôm nay, lãi được một khoản bằng mấy ngày công của chú rồi. Không còn gì để chê.",
         "Cảm ơn các cháu đã luôn kiên nhẫn với một người già như chú.",
         "Chú đi ngủ đây, mai lại là một ngày dài. Chúc cả nhà ngủ ngon.",
         "Nằm trên giường mà vẫn không ngủ được vì vui quá, cứ nghĩ đến tương lai tốt đẹp hơn.",
@@ -68,17 +68,17 @@ SCENARIOS_THO_HO = {
         "Mỗi đồng tiền kiếm được đều là mồ hôi nước mắt, nên chú trân trọng lắm."
     ],
     "experience_motivation": [
-        "Nói thật là từ ngày biết đến nhóm, cuộc sống của chú có thêm một niềm hy vọng lớn lắm.",
-        "Trước đây chú làm quần quật quanh năm cũng chỉ đủ sống qua ngày, giờ thì đã dám mơ đến chuyện khác.",
+        "Chú nói thật tình, từ ngày biết đến nhóm, cuộc sống của chú có thêm một niềm hy vọng lớn lắm.",
+        "Trước đây chú làm quần quật quanh năm cũng chỉ đủ ăn. Giờ thì đã dám nghĩ đến chuyện xây sửa lại nhà.",
         "Chú đang cố gắng tích cóp một số vốn để về quê mở tiệm tạp hóa nhỏ, không phải xa vợ xa con nữa.",
-        "Mỗi lần nhận được tiền thắng, chú đều cảm thấy công sức mình bỏ ra được đền đáp xứng đáng.",
-        "Chú khoe với các cháu, tháng này chú đã gửi được tiền về quê để sửa lại cái mái nhà bị dột.",
+        "Mỗi lần nhận được tiền thắng, chú lại thấy công sức mình bỏ ra được đền đáp xứng đáng.",
+        "Chú khoe với các cháu, tháng này chú đã gửi được tiền về quê để sửa lại cái mái nhà bị dột rồi.",
         "Ở đây chú không chỉ nhận được tiền mà còn nhận được sự quan tâm, chỉ bảo của mọi người, quý lắm.",
         "Ước mơ lớn nhất của đời chú là thấy vợ con được sống sung sướng hơn, và nhóm đang giúp chú thực hiện điều đó.",
-        "Chú không biết dùng lời lẽ hoa mỹ, chỉ biết nói hai từ cảm ơn từ tận đáy lòng.",
+        "Chú không biết dùng lời lẽ hoa mỹ, chỉ biết nói hai từ 'cảm ơn' từ tận đáy lòng.",
         "Từ ngày có thêm thu nhập, chú ăn uống cũng thấy ngon miệng hơn, ngủ cũng sâu giấc hơn.",
-        "Chú đã trả được hết mấy khoản nợ nhỏ vay mượn trước đây, cảm giác nhẹ cả người.",
-        "Con chú nó khoe ở lớp được điểm cao, chú liền lấy tiền thắng để mua cho nó cái cặp sách mới.",
+        "Chú đã trả được hết mấy khoản nợ nhỏ trước đây, cảm giác nhẹ cả người các cháu ạ.",
+        "Con chú nó khoe được điểm cao, chú liền lấy tiền thắng mua cho nó cái cặp sách mới. Vui lắm.",
         "Chú biết thân phận mình thấp kém, nhưng ở đây chú được mọi người tôn trọng, chú rất cảm động.",
         "Mỗi lần rút được tiền về tài khoản, chú đều phải nhìn đi nhìn lại mấy lần mới tin là thật.",
         "Chú sẽ luôn ghi nhớ những lời khuyên của các cháu, không được tham lam, phải biết điểm dừng.",
@@ -96,7 +96,7 @@ SCENARIOS_THO_HO = {
         "Tay này cầu khó đoán quá, thôi chú xin ngồi ngoài xem các cháu trổ tài cho an toàn.",
         "Chú có ít vốn còm thôi, các cháu bảo tay này chú nên vào bao nhiêu thì hợp lý?",
         "Lại thắng nữa rồi, đúng là đi theo mọi người là quyết định sáng suốt nhất của chú.",
-        "Chú không rành mấy cái nút bấm, các cháu chỉ lại cho chú một lần nữa được không?",
+        "Chú không rành mấy cái nút bấm, các cháu chỉ lại cho chú một lần nữa được không? Cảm ơn nhé.",
         "Cảm ơn cháu B đã kiên nhẫn giải thích cho chú, chú hiểu rồi.",
         "Mạng ở công trình chập chờn lắm, có lúc chú không gửi được tin nhắn, các cháu thông cảm.",
         "Thấy các cháu đoàn kết giúp đỡ nhau, chú thấy ấm lòng lắm.",
@@ -112,16 +112,3 @@ SCENARIOS_THO_HO = {
         "Hy vọng nhóm mình sẽ ngày càng phát triển để giúp được nhiều người hơn nữa."
     ]
 }
-
-def expand_scenarios(scenarios, factor=4):
-    expanded = {}
-    for category, messages in scenarios.items():
-        new_messages = list(messages)
-        for _ in range(factor - 1):
-            for msg in messages:
-                variants = [f"{msg}, các cháu ạ.", f"Chú nói thật tình, {msg[0].lower()}{msg[1:]}", f"{msg}, mừng quá đi thôi!", f"Nghĩ lại thấy, {msg[0].lower()}{msg[1:]}"]
-                new_messages.extend(variants)
-        expanded[category] = list(set(new_messages))
-    return expanded
-
-SCENARIOS_THO_HO = expand_scenarios(SCENARIOS_THO_HO)
