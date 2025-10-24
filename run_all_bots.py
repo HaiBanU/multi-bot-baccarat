@@ -23,7 +23,7 @@ CHAT_ID = os.getenv("CHAT_ID")
 VN_TZ = timezone(timedelta(hours=7))
 
 GLOBAL_ACTIVE_START = dt_time(6, 30)
-GLOBAL_ACTIVE_END = dt_time(23, 59)
+GLOBAL_ACTIVE_END = dt_time(23, 30)
 
 
 class TelegramBotPersona:
