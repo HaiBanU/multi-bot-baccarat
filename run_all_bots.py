@@ -136,7 +136,8 @@ class TelegramBotPersona:
 
     async def send_message_async(self, message):
         try:
-            now_vn = datetime.now(VN_TZ)
+            # === THAY ĐỔI #1: SỬA LỖI MÚI GIỜ KHI IN LOG ===
+            now_vn = datetime.now(timezone.utc).astimezone(VN_TZ)
             await self.bot.send_message(chat_id=CHAT_ID, text=message)
             print(f"✅ [{self.bot_name.upper()}] [{now_vn.strftime('%H:%M:%S')}] Đã gửi: {message}")
         except telegram.error.TimedOut:
@@ -155,7 +156,8 @@ class TelegramBotPersona:
         print(f"[{self.bot_name.upper()}] Logic của Bot đang khởi động... Chờ {initial_delay} giây.")
         time.sleep(initial_delay)
 
-        now_for_scheduling = datetime.now(VN_TZ)
+        # === THAY ĐỔI #2: SỬA LỖI MÚI GIỜ KHI LÊN LỊCH BAN ĐẦU ===
+        now_for_scheduling = datetime.now(timezone.utc).astimezone(VN_TZ)
         for category in self.scenarios.keys():
             min_delay = 5
             max_delay = self.message_interval[1] // 3
@@ -165,7 +167,12 @@ class TelegramBotPersona:
 
         while True:
             try:
-                now = datetime.now(VN_TZ)
+                # === THAY ĐỔI #3: SỬA LỖI MÚI GIỜ TRONG VÒNG LẶP CHÍNH ===
+                # Lấy giờ UTC hiện tại (luôn chính xác trên mọi server)
+                now_utc = datetime.now(timezone.utc)
+                # Chuyển đổi tường minh sang múi giờ Việt Nam
+                now = now_utc.astimezone(VN_TZ)
+                
                 current_time = now.time()
 
                 if GLOBAL_ACTIVE_START <= current_time <= GLOBAL_ACTIVE_END:
